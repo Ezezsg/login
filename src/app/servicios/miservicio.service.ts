@@ -8,7 +8,7 @@ import { environment } from '../../environments/environment';
 export class MiservicioService {
   
   public usuario;
-  public url = environment.urlpaises;
+  private url = environment.urlpaises;
   constructor(
   	private http: HttpClient
   ) { }
