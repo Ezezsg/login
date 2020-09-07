@@ -1,19 +1,28 @@
 <div class="container login-container">
             <div class="login-form-1">
-                <h3>Login</h3>
-                    <form>
+                <h3>Iniciar Sesión</h3>
+                    <div >
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Tú Email" value="" />
+                            <input type="text" class="form-control" placeholder="Tú Email" [(ngModel)]="usuario.email" />
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Tú Password" value="" />
+                            <input type="password" class="form-control" placeholder="Tú Contraseña" [(ngModel)]="usuario.clave" />
                         </div>
+
                         <div class="form-group">
-                            <input type="submit" class="btnSubmit" value="Login" />
+                            <!-- <input type="submit" class="btnSubmit" value="gin" /> -->
+                            <button class="btn btn-primary btn-lg btn-block" (click)=ingresar()>
+                                Iniciar Sesión
+                            </button>
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <a href="#" class="ForgetPwd">Forget Password?</a>
-                        </div>
-                    </form>
+                        </div> -->
+                    </div>
+                    <div>
+                        <p>Usuario = "admin@admin.com"</p>
+                        <p>Clave = "1234"</p>
+                    </div>
             </div>
+            
 </div>

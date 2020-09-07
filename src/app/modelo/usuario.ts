@@ -1,4 +1,5 @@
 export class Usuario {
-	public nombre; 
+	public email; 
 	public clave;
+	public perfil;
 } 
