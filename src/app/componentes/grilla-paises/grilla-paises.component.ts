@@ -13,10 +13,15 @@ export class GrillaPaisesComponent implements OnInit {
   constructor( private miservicio: MiservicioService ) { }
 
   ngOnInit(): void {
+
   	this.miservicio.obtenerPaises().subscribe((paises: any) => {
   		console.log(paises);
   		this.listadoPaises = paises;
   	});
+  }
+
+  mostrarUsuario(){
+    return this.miservicio.usuario.email;
   }
 
 }

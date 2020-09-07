@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  urlPaises: "https://restcountries.eu/rest/v2/"
+  urlpaises: "https://restcountries.eu/rest/v2/"
 };
 
 /*
