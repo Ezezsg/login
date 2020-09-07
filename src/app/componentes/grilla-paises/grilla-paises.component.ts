@@ -21,7 +21,7 @@ export class GrillaPaisesComponent implements OnInit {
   }
 
   mostrarUsuario(){
-    return this.miservicio.usuario.email;
+    return this.miservicio.usuario.perfil;
   }
 
 }
