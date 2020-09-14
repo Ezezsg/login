@@ -15,6 +15,7 @@ import { MiservicioService } from './servicios/miservicio.service';
 import { FormsModule } from '@angular/forms';
 import { ControlEntidadComponent } from './componentes/control-entidad/control-entidad.component';
 import { ListadoEntidadComponent } from './componentes/listado-entidad/listado-entidad.component';
+import { DetalleEntidadComponent } from './componentes/detalle-entidad/detalle-entidad.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { ListadoEntidadComponent } from './componentes/listado-entidad/listado-e
     HomeComponent,
     GrillaPaisesComponent,
     ControlEntidadComponent,
-    ListadoEntidadComponent
+    ListadoEntidadComponent,
+    DetalleEntidadComponent
   ],
   imports: [
     BrowserModule,
