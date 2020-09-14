@@ -13,6 +13,9 @@ import { GrillaPaisesComponent } from './componentes/grilla-paises/grilla-paises
 import { MiservicioService } from './servicios/miservicio.service';
 
 import { FormsModule } from '@angular/forms';
+import { ControlEntidadComponent } from './componentes/control-entidad/control-entidad.component';
+import { ListadoEntidadComponent } from './componentes/listado-entidad/listado-entidad.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { FormsModule } from '@angular/forms';
     LoginComponent,
     ErrorComponent,
     HomeComponent,
-    GrillaPaisesComponent
+    GrillaPaisesComponent,
+    ControlEntidadComponent,
+    ListadoEntidadComponent
   ],
   imports: [
     BrowserModule,
