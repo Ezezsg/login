@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { Usuario } from '../../modelo/usuario';
 
 
 @Component({
@@ -9,7 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ListadoEntidadComponent implements OnInit {
 
-  @Input() listadoUsuariosGrilla = [];	
+  @Input() listadoUsuariosGrilla: Usuario[];	
 
   constructor() {
   	

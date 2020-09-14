@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { MiservicioService } from '../../servicios/miservicio.service';
-
+import { Usuario } from '../../modelo/usuario';
 
 @Component({
   selector: 'app-control-entidad',
@@ -9,7 +9,7 @@ import { MiservicioService } from '../../servicios/miservicio.service';
 })
 export class ControlEntidadComponent implements OnInit {
 
-  listadoUsuarios = [];
+  listadoUsuarios: Usuario[];
 
   constructor(private miservicio: MiservicioService) { }
 
