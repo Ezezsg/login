@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
 import { Usuario } from '../../modelo/usuario';
 
 
@@ -9,13 +9,18 @@ import { Usuario } from '../../modelo/usuario';
 })
 export class ListadoEntidadComponent implements OnInit {
 
-  @Input() listadoUsuariosGrilla: Usuario[];	
+  @Input() listadoUsuariosGrilla: Usuario[];
+  @Output() usuarioSeleccionado: EventEmitter<any> = new EventEmitter<any>();	
 
   constructor() {
   	
   }
 
   ngOnInit(): void {
+  }
+
+  mostrarDetalles(usuario: Usuario){
+  	this.usuarioSeleccionado.emit(usuario);
   }
 
 }

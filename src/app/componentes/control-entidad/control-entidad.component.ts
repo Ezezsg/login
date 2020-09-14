@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MiservicioService } from '../../servicios/miservicio.service';
 import { Usuario } from '../../modelo/usuario';
 
@@ -10,6 +10,7 @@ import { Usuario } from '../../modelo/usuario';
 export class ControlEntidadComponent implements OnInit {
 
   listadoUsuarios: Usuario[];
+  usuarioSeleccionado: Usuario;
 
   constructor(private miservicio: MiservicioService) { }
 
@@ -18,6 +19,10 @@ export class ControlEntidadComponent implements OnInit {
   		console.log(personas);
   		this.listadoUsuarios = personas;
   	});
+  }
+
+  tomarUsuarioParaDetalles(nuevoUsuario: Usuario) {
+    this.usuarioSeleccionado = nuevoUsuario;
   }
 
 }
