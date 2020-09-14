@@ -7,4 +7,5 @@ export class Usuario {
     FechaNac: Date;
     FotoPerfil: string;
     perfil: string;
+    clave: string;
 } 
