@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { ControlEntidadComponent } from './componentes/control-entidad/control-entidad.component';
 import { ListadoEntidadComponent } from './componentes/listado-entidad/listado-entidad.component';
 import { DetalleEntidadComponent } from './componentes/detalle-entidad/detalle-entidad.component';
+import { BotonEntidadComponent } from './componentes/boton-entidad/boton-entidad.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { DetalleEntidadComponent } from './componentes/detalle-entidad/detalle-e
     GrillaPaisesComponent,
     ControlEntidadComponent,
     ListadoEntidadComponent,
-    DetalleEntidadComponent
+    DetalleEntidadComponent,
+    BotonEntidadComponent
   ],
   imports: [
     BrowserModule,

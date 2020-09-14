@@ -1,15 +1,15 @@
-<div *ngIf="!unUsuario" style="padding: 20px;">
-    <h1 style="text-align: center;">Detalle Usuario</h1>
-    <p style="text-align: center; margin-top: 10px;"> Seleccione un usuario </p>
+<div *ngIf="!unUsuario">
+    <h1>Detalle Usuario</h1>
+    <p> Seleccione un usuario </p>
 </div>
-<div *ngIf="unUsuario" style="padding: 20px;">
-    <h1 style="text-align: center;">Detalle Usuario</h1>
-    <h4 style="text-align: center;">{{unUsuario.email}}</h4>
-    <p style="text-align: center;">Id: {{unUsuario.id}}</p>
-    <p style="text-align: center;">Sexo: {{unUsuario.Sexo}}</p>
-    <p style="text-align: center;">Nombre: {{unUsuario.Nombre}}</p>
-    <p style="text-align: center;">Apellido: {{unUsuario.Apellido}}</p>
-    <p style="text-align: center;">Fecha de Nacimiento: {{unUsuario.FechaNac}}</p>
-    <p style="text-align: center;">Foto de Perfil: <img [src]="unUsuario.FotoPerfil" style="width: 50px; height: 50px; text-align: center;">
+<div *ngIf="unUsuario">
+    <h1>Detalle Usuario</h1>
+    <h4>{{unUsuario.email}}</h4>
+    <p>Id: {{unUsuario.id}}</p>
+    <p>Sexo: {{unUsuario.Sexo}}</p>
+    <p>Nombre: {{unUsuario.Nombre}}</p>
+    <p>Apellido: {{unUsuario.Apellido}}</p>
+    <p>Fecha de Nacimiento: {{unUsuario.FechaNac}}</p>
+    <p>Foto de Perfil: <img [src]="unUsuario.FotoPerfil" style="width: 50px; height: 50px; text-align: center;">
     </p>
 </div>
