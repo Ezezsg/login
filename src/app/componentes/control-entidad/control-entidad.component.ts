@@ -11,6 +11,7 @@ export class ControlEntidadComponent implements OnInit {
 
   listadoUsuarios: Usuario[];
   usuarioSeleccionado: Usuario;
+  usuariosEliminados: any[] = [];
 
   constructor(private miservicio: MiservicioService) { }
 
@@ -25,4 +26,8 @@ export class ControlEntidadComponent implements OnInit {
     this.usuarioSeleccionado = nuevoUsuario;
   }
 
+  eliminarUsuarioPrincipal(usuario){
+    this.listadoUsuarios = this.listadoUsuarios.filter(u => u.id !== usuario.id);
+    this.usuariosEliminados.push(usuario);  
+  }
 }

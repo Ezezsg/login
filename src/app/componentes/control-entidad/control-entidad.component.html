@@ -4,9 +4,12 @@
 				<app-listado-entidad [listadoUsuariosGrilla]="listadoUsuarios" (usuarioSeleccionado)="tomarUsuarioParaDetalles($event)"></app-listado-entidad>
 			</div> 
 			<div class="col col-2 detalle">
-				<app-detalle-entidad [unUsuario]="usuarioSeleccionado"></app-detalle-entidad>
+				<app-detalle-entidad [unUsuario]="usuarioSeleccionado" (eliminar)="eliminarUsuarioPrincipal($event)"></app-detalle-entidad>
 			</div> 
-		</div>
+	</div>
+	<div>
+		<app-listado-entidad [listadoUsuariosGrilla]="usuariosEliminados"></app-listado-entidad>
+	</div>
 </div>
 	
 

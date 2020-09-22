@@ -22,4 +22,8 @@ export class MiservicioService {
   public obtenerPersonas(){
   	return this.http.get(this.url2);
   }
+
+  public elmiminarPersona(){
+    
+  }
 }
