@@ -22,6 +22,7 @@ export class DetalleEntidadComponent implements OnInit {
 
   borrarEnDetalle(event){
   	this.eliminar.emit(event);
+  	this.unUsuario = null;
   }
 
 }

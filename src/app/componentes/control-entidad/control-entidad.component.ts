@@ -28,6 +28,7 @@ export class ControlEntidadComponent implements OnInit {
 
   eliminarUsuarioPrincipal(usuario){
     this.listadoUsuarios = this.listadoUsuarios.filter(u => u.id !== usuario.id);
-    this.usuariosEliminados.push(usuario);  
+    this.usuariosEliminados.push(usuario);
+    
   }
 }
